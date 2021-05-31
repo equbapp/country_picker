@@ -1,8 +1,8 @@
 name: country_picker
-description: A new Flutter project.
+description: Customizable country code picker.
 version: 0.0.1
-author:
-homepage:
+author: Surafel Kindu
+homepage: https://github.com/equbapp/country_picker.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
