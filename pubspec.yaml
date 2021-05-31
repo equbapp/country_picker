@@ -1,13 +1,7 @@
 name: country_picker
-<<<<<<< HEAD
 description: Customizable country code picker.
 version: 0.0.1
 author: Surafel Kindu
-=======
-description: Country Code Picker
-version: 0.0.2
-author: 
->>>>>>> 61fc15b311db9d97778eecf4615fc31eb1eab61f
 homepage: https://github.com/equbapp/country_picker.git
 
 environment:
