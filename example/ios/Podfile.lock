@@ -1,0 +1,22 @@
+PODS:
+  - country_picker (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - country_picker (from `.symlinks/plugins/country_picker/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  country_picker:
+    :path: ".symlinks/plugins/country_picker/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  country_picker: 689a0b09e6cf32cbcee4d8b21497e6d8aba4c458
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.1
