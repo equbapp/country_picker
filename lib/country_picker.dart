@@ -8,10 +8,10 @@ import 'package:flutter/services.dart';
 
 class CountryPicker {
   static Future showCountryPicker(
-      {@required BuildContext context,
-      @required String title,
-      @required Widget willDisplayWidget,
-        @required Function(CountryCodeInfo) onSelected,
+      {required BuildContext context,
+      required String title,
+      required Widget willDisplayWidget,
+        required Function(CountryCodeInfo) onSelected,
       Color backgroundColor = Colors.white,
       Color foregroundColor = Colors.black,
       double borderRadius = 10.0}) {

@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 
 class PickerView extends StatefulWidget {
 
-  final BuildContext context;
-  final String title;
-  final Function onClose;
-  final Function(CountryCodeInfo) onPicked;
+  final BuildContext? context;
+  final String? title;
+  final Function? onClose;
+  final Function(CountryCodeInfo)? onPicked;
   final Color backgroundColor = Colors.white;
   final Color foregroundColor = Colors.black;
   final double borderRadius = 10.0;
@@ -121,13 +121,13 @@ class _PickerViewState extends State<PickerView> {
                   itemBuilder: (context, index) {
                     CountryCodeInfo code = allCodes[index];
                     return ListTile(
-                      leading: Text(code.flag),
-                      title: Text(code.country),
-                      subtitle: Text(code.dialCode),
+                      leading: Text(code.flag!),
+                      title: Text(code.country!),
+                      subtitle: Text(code.dialCode!),
                       onTap: (){
                         print(code.dialCode);
-                        widget.onPicked(code);
-                        widget.onClose(widget.context);
+                        widget.onPicked!(code);
+                        widget.onClose!(widget.context);
                       },
                     );
                   },
@@ -136,13 +136,13 @@ class _PickerViewState extends State<PickerView> {
                   itemBuilder: (context, index) {
                     CountryCodeInfo code = searchedCodes[index];
                     return ListTile(
-                      leading: Text(code.flag),
-                      title: Text(code.country),
-                      subtitle: Text(code.dialCode),
+                      leading: Text(code.flag!),
+                      title: Text(code.country!),
+                      subtitle: Text(code.dialCode!),
                       onTap: (){
                         print(code.dialCode);
-                        widget.onPicked(code);
-                        widget.onClose(widget.context);
+                        widget.onPicked!(code);
+                        widget.onClose!(widget.context);
                       },
                     );
                   },
@@ -161,7 +161,7 @@ class _PickerViewState extends State<PickerView> {
       searchedCodes = [];
     });
     for(CountryCodeInfo code in allCodes){
-      if(code.country.toLowerCase().startsWith(val)){
+      if(code.country!.toLowerCase().startsWith(val)){
         setState(() {
           searchedCodes.add(code);
         });
