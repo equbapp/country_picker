@@ -28,7 +28,7 @@ class WidgetTest extends StatefulWidget {
 
 class _WidgetTestState extends State<WidgetTest> {
 
-  String dialCode = "";
+  String? dialCode = "";
 
   @override
   Widget build(BuildContext context) {
