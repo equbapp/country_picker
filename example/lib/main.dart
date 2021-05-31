@@ -41,12 +41,13 @@ class _WidgetTestState extends State<WidgetTest> {
           child: TextButton(
             child: Text('Click Here: $dialCode'),
             onPressed: (){
-              CountryPicker.showCountryPicker(context: context, title: 'Hello', willDisplayWidget: Icon(Icons.ac_unit),
+              CountryPicker picker = new CountryPicker(context: context, title: 'Hello',
                   onSelected: (code){
-                setState(() {
-                  dialCode = code.dialCode;
-                });
-              });
+                    setState(() {
+                      dialCode = code.dialCode;
+                    });
+                  });
+              picker.showCountryPicker();
             },
           )
       ),
