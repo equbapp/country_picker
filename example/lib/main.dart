@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
 }
 
 class WidgetTest extends StatefulWidget {
-  const WidgetTest({Key key}) : super(key: key);
 
   @override
   _WidgetTestState createState() => _WidgetTestState();
