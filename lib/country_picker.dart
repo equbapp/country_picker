@@ -15,13 +15,13 @@ class CountryPicker {
       Color backgroundColor = Colors.white,
       Color foregroundColor = Colors.black,
       double borderRadius = 10.0}) {
-    assert(context != null, "context is null!!");
-    assert(willDisplayWidget != null, "willDisplayWidget is null!!");
-    assert(title != null, "title is null!!");
-    assert(onSelected != null, "On Selected is null!!");
-    assert(backgroundColor != null, "backgroundColor is null!!");
-    assert(foregroundColor != null, "foregroundColor is null!!");
-    assert(borderRadius != null, "borderRadius is null!!");
+    // assert(context != null, "context is null!!");
+    // assert(willDisplayWidget != null, "willDisplayWidget is null!!");
+    // assert(title != null, "title is null!!");
+    // assert(onSelected != null, "On Selected is null!!");
+    // assert(backgroundColor != null, "backgroundColor is null!!");
+    // assert(foregroundColor != null, "foregroundColor is null!!");
+    // assert(borderRadius != null, "borderRadius is null!!");
 
     return showModalBottomSheet(
       context: context,

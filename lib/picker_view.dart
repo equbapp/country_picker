@@ -12,7 +12,7 @@ class PickerView extends StatefulWidget {
   final Color foregroundColor = Colors.black;
   final double borderRadius = 10.0;
 
-  const PickerView({Key key, this.context, this.title, this.onClose, this.onPicked}) : super(key: key);
+  const PickerView({this.context, this.title, this.onClose, this.onPicked});
 
   @override
   _PickerViewState createState() => _PickerViewState();
